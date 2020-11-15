@@ -1,0 +1,26 @@
+service: hello-bolt
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  environment:
+    SLACK_SIGNING_SECRET: ${env:SLACK_SIGNING_SECRET}
+    SLACK_BOT_TOKEN: ${env:SLACK_BOT_TOKEN}
+    GITHUB_ACCESS_TOKEN: ${env:GITHUB_ACCESS_TOKEN}
+    GIT_REPO_OWNER: ${env:GIT_REPO_OWNER}
+    GIT_REPO: ${env:GIT_REPO}
+    GIT_BRANCH: ${env:GIT_BRANCH}
+    REPORT_DIR: ${env:REPORT_DIR}
+    CLIENT_OPS_CHANNEL: ${env:CLIENT_OPS_CHANNEL}
+
+functions:
+  addReport:
+    handler: index.handler
+    events:
+      - http:
+          method: post
+          path: /add-report
