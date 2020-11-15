@@ -2,7 +2,6 @@ const fetch = require("node-fetch");
 const { createHmac } = require("crypto");
 
 module.exports = {
-  slackRequest,
   reportCreationFailed,
   reportCreationSuccessful,
   openModal,
