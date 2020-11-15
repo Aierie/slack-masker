@@ -7,7 +7,8 @@ Prototype for adding html files to a git repo based on user input from slack
     - ![Modal with inputs for report name and link](modal.png)
 2. Submit info:
    - Everything's ok - no duplicates, report name can become valid url:
-     - 
+     - ![Modal with valid input](input.png)
+     - ![Success message](success%20message.png)
    - Duplicate or can't make valid url:
      - ![Modal with invalid input](bad%20input.png)
      - ![Failure message](failure%20message.png)
