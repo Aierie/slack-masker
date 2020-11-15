@@ -15,4 +15,4 @@ Local development
 2. Run sls offline start
 3. Use ngrok targeting port 3000
 4. Update the slack app to direct interactive messages to the endpoint on the ngrok url
-5. You should be able to run the slack app as in [index.md](index.md)
+5. You should be able to run the slack app as in [app-usage.md](app-usage.md)
