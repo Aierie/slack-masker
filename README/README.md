@@ -1,2 +1,2 @@
-[App usage](app-usage.md)
-[Development](development.md)
+- [App usage](app-usage.md)
+- [Development](development.md)
