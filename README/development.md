@@ -1,5 +1,5 @@
 Environment variables from slack
-1. The channel name for the app to post updates (variable name: CLIENT_OPS_CHANNEL)
+1. The channel name for the app to post updates, prepended with # (variable name: CLIENT_OPS_CHANNEL)
 
 Environment variables from slack app
 1. Set up a slack app
